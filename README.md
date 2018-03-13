@@ -1,4 +1,4 @@
-# Ejercicio Bank
+# Ejercicio Bank   [![Build Status](https://travis-ci.org/jmjaime/bank.svg?branch=master)](https://travis-ci.org/jmjaime/bank)
 
 ## Consigna
 Permitir realizar transacciones entre distintas cuentas, teniendo en cuenta:
