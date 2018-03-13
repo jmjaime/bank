@@ -1,0 +1,76 @@
+{
+	"info": {
+		"name": "Bank",
+		"_postman_id": "a74d7e98-01d3-43ca-b111-0f3c49054933",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Default Account",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"account_from\":\"asdasd\",\n\t\"account_to\":\"sadasd\",\n\t\"amount\":10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"account"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Do Transaction",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"account_from\": \"12345/67\",\n\t\"account_to\":\"12345/67\",\n\t\"amount\":10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transaction"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
